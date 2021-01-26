@@ -1,0 +1,88 @@
+body{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    background-color: rgb(234	90	107	);
+    height: fit-content;
+}
+
+main{
+    background-color: rgba(255,255,255,.5);
+    border-radius: 1rem;
+    height: 70%;
+}
+body h1{
+    color: rgb(80	80	80	);
+    text-align: left;
+    margin-left: 5%;
+}
+body label{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: '.AppleSystemUIFont';
+    font-size: medium;
+}
+body a {
+    color: crimson;
+    text-decoration: none;
+    font-family: '.AppleSystemUIFont';
+}
+#email input{
+    width: 40%;
+    padding: 2%;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+#password input{
+    width: 40%;
+    padding: 2%;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+#login input{
+    font-family: '.AppleSystemUIFont';
+    font-size: 100%;
+    width: 40%;
+    padding: 2%;
+    border-radius: 1rem;
+    border: 1px solid white;
+    margin-left: 33.5%;
+    margin-top: 4%;
+    background-color: rgb(234	90	107	);
+    color: whitesmoke;
+}
+
+#password label{
+    color: rgb(205	91	106	);
+    margin-left: 10%;
+    font-family: '.AppleSystemUIFont';
+    font-size: 120%;
+}
+#email label{
+    color: rgb(205	91	106	);
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: '.AppleSystemUIFont';
+    font-size: 120%;
+}
+
+
+ #error_message p{
+     color: crimson;
+     margin-left: 16%;
+     margin-top: 0;
+     padding: 0.5% 1% 1% 1%;
+     position: absolute;
+     text-shadow: black;
+}
+#account {
+    margin-left: 10%;
+    color: rgb(80	80	80);
+}

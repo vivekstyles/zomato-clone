@@ -1,0 +1,59 @@
+body{
+    font-family: sans-serif;
+    font-size: 300%;
+    background-color:bisque;
+}
+.head1{
+    text-align:center;
+    color: white;
+    font-family: serif;
+    font-size: 230%;
+    border-style:solid;
+    background-color:red;
+    border-radius: 100px;
+    text-shadow: -4px -2px -2px black;
+}
+.head2{
+    margin: 50px;
+    color: indianred;
+    font-family: sans-serif;
+    font-size: 120%;
+
+}
+.head3{
+    font-family:monospace;
+    color: indianred;
+    font-size: 100%;
+    position: fixed;
+
+
+}
+li{
+    color: indianred;
+}
+#syntax{
+    color:black;
+}
+b{
+    color:darkred;
+}
+.fig{
+    color: indianred;
+    text-decoration-line:underline;
+    text-decoration-color: black;
+    padding:inherit;
+    text-shadow: -4px -2px -2px black;
+
+}
+img{
+    float: left;
+}
+#logo{
+    text-align: center;
+padding: 10px
+}
+#copyright{
+    font-size: 50%;
+    text-align:end;
+    color: darkgray;
+}
