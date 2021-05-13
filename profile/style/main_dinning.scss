@@ -1,0 +1,246 @@
+@import '../../dinning/style/variables';
+
+
+body{
+    width: 100%;
+}
+
+#header-1{
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    img{
+        width: 10%;
+        height: 12%;
+        margin: 1em 1em 1em 10em;
+        float: left;
+    }
+    #input-border{
+        border: 1px solid lightgrey;
+        width: 50%;
+        margin: .5% 2% 1% 2%;
+        float: left;
+        border-radius: .5em;
+        box-shadow: lightgrey 1px 1px 10px 1px;
+        padding-left: 1%;
+    }
+    #location{
+        padding: 2% 1%;
+        width: 25%;
+        border: none;
+        border-right: lightgrey solid 2px;
+    }
+    input{
+        padding: 2% 1%;
+        width: 60%;
+        border: none;
+    }
+    input[placeholder]{
+        text-align: center;
+        font-size: 100%;
+    }
+    ul{
+        position: relative;
+        float: left;
+        width: 20%;
+        margin: .5% 0% 0% 0%;
+        
+        #user-name{
+            margin: 2.5% 0% 0% 0%;
+            font-size: 120%;
+        }
+        li{
+            font-size: 100%;
+            img{
+                width: 15%;
+                height: 15%;
+                margin: 0% 5% 0% 0%;
+                border-radius: 5em;
+            }
+            &:hover > ul{
+                position: absolute;
+                z-index: 10;
+                content: " ";
+                display:block;
+            }
+        }
+        ul{
+            padding-top: 5%;
+            display: none;
+            width: 60%;
+            text-align: left;
+            padding-left: 20%;
+            font-size: 90%;
+            background-color: rgba(255,255,255,2);
+            border:1px solid lightgrey;
+            border-radius: 1em;
+
+            li{
+                margin: .5em .5em .5em 0em;
+                a{
+                    &:hover{
+                        color: $zomato-brand-color;
+                    }
+                }
+            }
+        }
+    }
+  
+}
+#header-2{
+    clear: both;
+    position: relative;
+    width: 80%;
+    height: 250px;
+    margin: 0% 0% 0% 10%; 
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    #profile-details{
+        position: absolute;
+        top: 0%;
+        color: white;
+        width: 60%;
+        margin: 2% 0% 0% 2%;
+
+        img{
+            width: 25%;
+            border-radius: 6em;
+            float: left;
+        }
+        h3{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 130%;
+            font-weight: 500;
+            margin: 10% 0% 0% 28%;
+        }
+        p{
+            margin: 0% 0% 0% 28%;
+        }
+    }
+    #edit-profile{
+        position: absolute;
+        top: 0%;
+        right: 0;
+        color: white;
+        width: 50%;
+
+        button{
+            background-color: $zomato-brand-color;
+            color: white;
+            padding: 1em 3em;
+            border-radius: .5em;
+            border: none;
+            position: absolute;
+            top: 40%;
+            right: 3%;
+        }
+        .nest-edit-tag{
+            float: right;
+            margin: 25% 0% 0% 0%;
+            padding: 1% 4%;
+            border-right: 1px solid rgba(255,255,255,.6);
+
+            h3{
+                text-align: center;
+                font-size: 150%;
+                font-weight: 500;
+            }
+        }
+    }
+}
+main{
+    width: 80%;
+    margin: 4% 0% 0% 10%; 
+    clear: both;
+}
+#section-1{
+    width: 30%;
+    float: left;
+
+    ul{
+        padding: 1%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+
+        li{
+            border-radius: .5em;
+            border: 1px solid lightgrey;
+            color: rgb(155, 155, 155);
+            margin: 0% 0% 6% 0%;
+            font-weight: 300;
+            padding: .5em 0em;
+            width: 100%;
+            p{
+                padding: 0% 2% 4% 5%;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+                border: none;
+                border-radius: none;
+                width: 89%;
+
+                li{
+                    text-align: left;
+                    border: none;
+                    border-radius: .5em;
+                    margin: 0;
+                    color: $primary-black-color;
+                    padding: .5em 1em;
+                    border: 4px solid white;
+                    border-right: 1px solid white;
+                    border-radius: 0%;
+                    width: 100%;
+                    font-weight: 400;
+
+                    &:hover{
+                        border-left: $zomato-brand-color 4px solid;
+                        background:-webkit-linear-gradient(10deg,white 10px,rgb(255, 177, 177));
+                        border-right: 1px solid white;
+                    }
+                    &:checked{
+                        background:-webkit-linear-gradient(10deg,white 10px,rgb(255, 177, 177));
+                    }
+                    &:hover > a{
+                        color: $zomato-brand-color;
+                    }
+
+                    a{
+                        color: $primary-black-color;
+                        
+                    }
+                }
+                .active{
+                    text-align: left;
+                    border: none;
+                    border-radius: .5em;
+                    margin: 0;
+                    color: $primary-black-color;
+                    padding: .5em 1em;
+                    border: 4px solid white;
+                    border-right: 1px solid white;
+                    border-radius: 0%;
+                    width: 100%;
+                    font-weight: 400;
+
+                    border-left: $zomato-brand-color 4px solid;
+                    background:-webkit-linear-gradient(10deg,white 10px,rgb(255, 177, 177));
+                    border-right: 1px solid white;
+                    a{
+                        color: $zomato-brand-color;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
+#section-2{
+    width: 66%;
+    margin-left: 2%;
+    float: left;
+}

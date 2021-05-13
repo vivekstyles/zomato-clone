@@ -1,0 +1,274 @@
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+#header-1 {
+  width: 100%;
+  margin: 0% 0% 0% 0%;
+}
+
+#header-1 img {
+  width: 10%;
+  height: 12%;
+  margin: 1em 1em 1em 10em;
+  float: left;
+}
+
+#header-1 #input-border {
+  border: 1px solid lightgrey;
+  width: 50%;
+  margin: .5% 2% 1% 2%;
+  float: left;
+  border-radius: .5em;
+  box-shadow: lightgrey 1px 1px 10px 1px;
+  padding-left: 1%;
+}
+
+#header-1 #location {
+  padding: 2% 1%;
+  width: 25%;
+  border: none;
+  border-right: lightgrey solid 2px;
+}
+
+#header-1 input {
+  padding: 2% 1%;
+  width: 60%;
+  border: none;
+}
+
+#header-1 input[placeholder] {
+  text-align: center;
+  font-size: 100%;
+}
+
+#header-1 ul {
+  position: relative;
+  float: left;
+  width: 20%;
+  margin: .5% 0% 0% 0%;
+}
+
+#header-1 ul #user-name {
+  margin: 2.5% 0% 0% 0%;
+  font-size: 120%;
+}
+
+#header-1 ul li {
+  font-size: 100%;
+}
+
+#header-1 ul li img {
+  width: 15%;
+  height: 15%;
+  margin: 0% 5% 0% 0%;
+  border-radius: 5em;
+}
+
+#header-1 ul li:hover > ul {
+  position: absolute;
+  z-index: 10;
+  content: " ";
+  display: block;
+}
+
+#header-1 ul ul {
+  padding-top: 5%;
+  display: none;
+  width: 60%;
+  text-align: left;
+  padding-left: 20%;
+  font-size: 90%;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 1em;
+}
+
+#header-1 ul ul li {
+  margin: .5em .5em .5em 0em;
+}
+
+#header-1 ul ul li a:hover {
+  color: #ea5a6b;
+}
+
+#header-2 {
+  clear: both;
+  position: relative;
+  width: 80%;
+  height: 250px;
+  margin: 0% 0% 0% 10%;
+}
+
+#header-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+#header-2 #profile-details {
+  position: absolute;
+  top: 0%;
+  color: white;
+  width: 60%;
+  margin: 2% 0% 0% 2%;
+}
+
+#header-2 #profile-details img {
+  width: 25%;
+  border-radius: 6em;
+  float: left;
+}
+
+#header-2 #profile-details h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 130%;
+  font-weight: 500;
+  margin: 10% 0% 0% 28%;
+}
+
+#header-2 #profile-details p {
+  margin: 0% 0% 0% 28%;
+}
+
+#header-2 #edit-profile {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  color: white;
+  width: 50%;
+}
+
+#header-2 #edit-profile button {
+  background-color: #ea5a6b;
+  color: white;
+  padding: 1em 3em;
+  border-radius: .5em;
+  border: none;
+  position: absolute;
+  top: 40%;
+  right: 3%;
+}
+
+#header-2 #edit-profile .nest-edit-tag {
+  float: right;
+  margin: 25% 0% 0% 0%;
+  padding: 1% 4%;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+#header-2 #edit-profile .nest-edit-tag h3 {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+main {
+  width: 80%;
+  margin: 4% 0% 0% 10%;
+  clear: both;
+}
+
+#section-1 {
+  width: 30%;
+  float: left;
+}
+
+#section-1 ul {
+  padding: 1%;
+  margin: 0% 0% 0% 0%;
+  width: 100%;
+}
+
+#section-1 ul li {
+  border-radius: .5em;
+  border: 1px solid lightgrey;
+  color: #9b9b9b;
+  margin: 0% 0% 6% 0%;
+  font-weight: 300;
+  padding: .5em 0em;
+  width: 100%;
+}
+
+#section-1 ul li p {
+  padding: 0% 2% 4% 5%;
+}
+
+#section-1 ul li ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  width: 89%;
+}
+
+#section-1 ul li ul li {
+  text-align: left;
+  border: none;
+  border-radius: .5em;
+  margin: 0;
+  color: #1c1c1c;
+  padding: .5em 1em;
+  border: 4px solid white;
+  border-right: 1px solid white;
+  border-radius: 0%;
+  width: 100%;
+  font-weight: 400;
+}
+
+#section-1 ul li ul li:hover {
+  border-left: #ea5a6b 4px solid;
+  background: -webkit-linear-gradient(10deg, white 10px, #ffb1b1);
+  border-right: 1px solid white;
+}
+
+#section-1 ul li ul li:checked {
+  background: -webkit-linear-gradient(10deg, white 10px, #ffb1b1);
+}
+
+#section-1 ul li ul li:hover > a {
+  color: #ea5a6b;
+}
+
+#section-1 ul li ul li a {
+  color: #1c1c1c;
+}
+
+#section-1 ul li ul .active {
+  text-align: left;
+  border: none;
+  border-radius: .5em;
+  margin: 0;
+  color: #1c1c1c;
+  padding: .5em 1em;
+  border: 4px solid white;
+  border-right: 1px solid white;
+  border-radius: 0%;
+  width: 100%;
+  font-weight: 400;
+  border-left: #ea5a6b 4px solid;
+  background: -webkit-linear-gradient(10deg, white 10px, #ffb1b1);
+  border-right: 1px solid white;
+}
+
+#section-1 ul li ul .active a {
+  color: #ea5a6b;
+}
+
+#section-2 {
+  width: 66%;
+  margin-left: 2%;
+  float: left;
+}
+/*# sourceMappingURL=main_dinning.css.map */

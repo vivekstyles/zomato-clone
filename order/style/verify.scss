@@ -1,0 +1,396 @@
+@import '../../dinning/style/variables';
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid lightgrey;
+
+    a{
+        color: $zomato-brand-color;
+        width: 30%;
+        float: left;
+        text-align: right;
+        margin: 2% 5% 0% 0%;
+    }
+    img{
+        width: 12%;
+        height: 10%;
+        float: left;
+        margin: 1% 5% 0% 5%;
+    }
+    ul{
+        float: left;
+        width: 30%;
+        margin: 2% 10% 0% 0%;
+        li{
+            float: left;
+            padding-left: 20em;
+            padding-top: .5%;
+
+            img{
+                position: absolute;
+                width: 3%; 
+                height: 5.2%;  
+                top: 1%;
+                right: 16.5%;  
+                border-radius: 5em;
+            }
+        }
+    }
+}
+
+//                                                     main start
+
+main{
+    clear: both;
+    width: 70%;
+    margin-left: 15%;
+
+    h1{
+        font-weight: 400;
+        color: $primary-black-color;
+    }
+}
+
+//                                                     section start
+
+section{
+    width: 59.5%;
+    // border: 1px solid black;
+    float: left;
+    margin: 2% 0% 0% 0%;
+    
+    #first-container{
+        padding: 4% 4%;
+        margin: 0% 0% 0% 0%;
+        border: 1px solid lightgrey;
+        border-radius: .5em;
+        h2{
+            font-weight: 400;
+            color: $primary-black-color;
+        
+            span{
+                color: $primary-black-color;
+                font-size: 80%;
+            }
+        }
+        p{
+            color: grey;
+            font-weight: 300;
+            font-size: 90%;
+            padding: 2% 0%;
+        }
+    }
+    #second-container{
+        padding: 4% 4%;
+        margin: 5% 0% 0% 0%;
+        border: 1px solid lightgrey;
+        border-radius: .5em;
+
+        h2{
+            font-weight: 400;
+            color: $primary-black-color;
+            padding: 2% 0%;
+        }
+        input{
+            padding: 1.2em 10em;
+            margin-left: 1%;
+            background-color: white;
+            border: 1px lightgrey dashed;
+            border-radius: .5em;
+            font-size: 110%;
+            &:focus{
+                padding: 4em 10em;
+            }
+            &::placeholder{
+            color: $zomato-brand-color;
+                
+            }
+        }
+
+    }
+    #third-container{
+        padding: 4% 4%;
+        margin: 5% 0% 0% 0%;
+        border: 1px solid lightgrey;
+        border-radius: .5em;
+
+        h2{
+            font-weight: 500;
+            color: $primary-black-color;
+            color: rgb(94, 92, 92);
+        }
+        p{
+            color: grey;
+            font-weight: 300;
+            font-size: 90%;
+            padding: 2% 0%;
+        }
+    }
+}
+
+//                                                     aside start
+
+aside{
+    float: left;
+    width: 30%;
+    position: relative;
+    // border: 1px solid gold;
+    margin: 2% 0% 0% 2%;
+    padding: 0%;
+
+    h2{
+        color: $secondry-black-color;
+        font-size: 120%;
+        font-weight: 500;
+        padding: 0% 0% 4% 0%;
+
+    }
+
+    #order-from-continer{
+        background-color: rgb(238, 234, 234);
+        padding: 4%;
+        border-radius: .5em .5em 0em 0em;
+        h4{
+            color: $secondry-black-color;
+            font-size: 90%;
+            padding: 1% 1% 4% 1%;
+            font-weight: 400;
+        }
+        h3{
+            color: $primary-black-color;
+            font-size: 100%;
+            padding: 1%;
+
+        }
+        p{
+            font-size: 90%;
+            font-weight: 300;
+            padding: 1%;
+            color: $secondry-black-color;
+        }
+    }
+    #orders-continer{
+        padding: 5%;
+
+        ul{
+            padding: 0% 0% 10% 0%;
+            float: left;
+            width: 60%;
+            li{
+                font-size: 100%;
+            }
+            #price-list-tag{
+                font-size: 100%;
+                font-weight: 300;
+                padding: 4% 0%;
+            }
+        }
+        #qunatiy{
+            border: 1px solid black;
+            margin: 0% 0% 0% 12%;
+            width: 26%;
+            float: left;
+            border-radius: .5em;
+            input{
+                width: 38%;
+                margin: 0%;
+                background-color: rgb(243, 141, 141);
+                padding: 8% 0%;
+                border: none;
+            }
+            input[value]{
+                text-align: center;
+            }
+            .min-and-max{
+                width: 25%;
+                margin: 0%;
+                background-color: rgba(255,255,255,0);
+                border: none;
+                padding: 6% 0%;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .min-and-max[value]{
+                text-align: center;
+                color: $zomato-brand-color;
+                font-size: 100%;
+                font-weight: 600;
+            }
+        }
+        p{
+            float: left;
+            text-align: right;
+            padding: 1% 0% 1% 0%;
+            font-size: 100%;
+            font-weight: 500;
+            margin: 1% 0% 0% 15%;
+        }
+        a{
+            float: left;
+            clear: both;
+            margin: 5% 5% 5% 20%;
+            border-bottom: 1px dashed grey;
+            font-size: 80%;
+            color: grey;
+        }
+    }
+    #support{
+        clear: both;
+        background-color: rgb(238, 234, 234);
+        padding: 5%;
+        h3{
+            color: gray;
+            font-size: 100%;
+            font-weight: 300;
+            padding-bottom: 4%;
+            margin: 0% 0% 0% 0%;
+        }
+
+        p{
+            font-size: 90%;
+            font-weight: 300;
+            color: $secondry-black-color;
+            margin: 0% 0% 0% 0%;
+        }
+
+        button{
+            background-color: white;
+            padding: .2em .8em;
+            border: none;
+            margin: 5% 2% 0% 0%;
+            border-radius: .5em;
+            font-size: 90%;
+            font-weight: 300;
+        }
+    }
+    #offer{
+        padding: 5%;
+        h3{
+            font-weight: 600;
+            color: black;
+            font-size: 100%;
+            margin-bottom: 2%;
+        }
+        a{
+            color: $primary-black-color;
+
+        }
+        span{
+            color: $zomato-brand-color;
+            margin-left: 10%;
+        }
+    }
+    #sub-total{
+        background-color: rgb(254,	252,	249	);
+        padding: 5%;
+        border-radius: 0em 0em .5em .5em;
+
+        table{
+            .subtotal{
+                padding: 2% 0%;
+                color: black;
+                font-size: 90%;
+                text-align: left;
+            }
+            .subtotal-1{
+                padding: 0% 0%;
+                color: black;
+                font-size: 90%;
+                text-align: right;
+
+            }
+            .tax{
+                color: $secondry-black-color;
+                margin: 0% 0% 0% 5%;
+                font-size: 90%;
+                padding-right: 10%;
+                text-align: left;
+                width: 90%;
+
+            }
+            .tax-1{
+                color: $secondry-black-color;
+                margin: 0% 0% 0% 5%;
+                font-size: 90%;
+                text-align: right;
+
+            }
+            .grandtotal{
+                padding: 2% 0%;
+                color: black;
+                font-size: 100%;
+                text-align: left;
+
+            }
+            .grandtotal-1{
+                padding: 0% 0%;
+                color: black;
+                font-size: 100%;
+                text-align: right;
+
+            }
+        }
+    }
+    #ordering-for{
+        padding: 5%;
+        #ord-tag{
+            float: left;
+            width: 70%;
+            h3{
+                color: gray;
+                font-size: 90%;
+                font-weight: 400;
+            }
+            p{
+                width: 100%;
+                color: black;
+                font-size: 100%;
+                font-weight: 400;
+                padding: 2% 0% 2% 0%;
+                text-align: left;
+            }
+        }
+        p{
+            float: left;
+            width: 30%;
+            color: $zomato-brand-color;
+            text-align: right;
+            padding: 3% 0% 2% 0%;
+        }
+    }
+    #non-refund{
+        clear: both;
+        padding: 5%;
+        p{
+            color: $zomato-brand-color;
+            font-size: 90%;
+            font-weight: 300;
+        }
+    }
+    #button{
+        position: absolute;
+        width: 100%;
+        top: 62%;
+        button{
+            position: fixed;
+            bottom: -6%;
+            padding: 1em 1em;
+            margin: 5% 0;
+            width: 21%;
+            color: white;
+            background-color: $zomato-brand-color;
+            border-radius: .5em;
+            border: none;
+            font-size: 100%;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

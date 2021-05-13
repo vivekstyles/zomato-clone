@@ -1,0 +1,234 @@
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+header img {
+  width: 10%;
+  height: 8%;
+  margin: 1em 1em 1em 10em;
+  float: left;
+}
+
+header #input-border {
+  border: 1px solid lightgrey;
+  width: 50%;
+  margin: .5% 2% 1% 2%;
+  float: left;
+  border-radius: .5em;
+  box-shadow: lightgrey 1px 1px 10px 1px;
+  padding-left: 1%;
+}
+
+header #location {
+  padding: 2% 1%;
+  width: 25%;
+  border: none;
+  border-right: lightgrey solid 2px;
+}
+
+header input {
+  padding: 2% 1%;
+  width: 60%;
+  border: none;
+}
+
+header input[placeholder] {
+  text-align: center;
+  font-size: 100%;
+}
+
+header ul {
+  position: relative;
+  float: left;
+  width: 20%;
+  margin: .5% 0% 0% 0%;
+}
+
+header ul #user-name {
+  margin: 2.5% 0% 0% 0%;
+  font-size: 120%;
+}
+
+header ul li {
+  font-size: 100%;
+}
+
+header ul li img {
+  width: 15%;
+  height: 15%;
+  margin: 0% 5% 0% 0%;
+  border-radius: 5em;
+}
+
+header ul li:hover > ul {
+  position: absolute;
+  z-index: 10;
+  content: " ";
+  display: block;
+}
+
+header ul ul {
+  padding-top: 5%;
+  display: none;
+  width: 60%;
+  text-align: left;
+  padding-left: 20%;
+  font-size: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightgrey;
+  border-radius: 1em;
+}
+
+header ul ul li {
+  margin: .5em .5em .5em 0em;
+}
+
+header ul ul li a:hover {
+  color: #ea5a6b;
+}
+
+nav {
+  clear: both;
+  font-size: 80%;
+  margin: 0%;
+  padding: .5% 0% .5% 10%;
+  border-top: lightgrey solid 1px;
+}
+
+main #main-image {
+  position: relative;
+  margin: 1% 0% 0% 10%;
+}
+
+main #main-image img {
+  width: 85%;
+}
+
+main #main-image #festivel-continer {
+  position: absolute;
+  top: 0%;
+  color: white;
+  margin: 0% 0% 0% 0%;
+  width: 85%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main #main-image #festivel-continer h3 {
+  padding: 16% 0% 0% 5%;
+  font-size: 300%;
+  font-weight: 400;
+}
+
+main #main-image #festivel-continer p {
+  padding: 1% 0% 0% 5%;
+}
+
+main #main-image #link-tag {
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  color: white;
+  width: 20%;
+  margin: 2% 0% 0% 0%;
+}
+
+main #main-image #link-tag p {
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4%;
+  border-radius: 5em;
+}
+
+main #hotel-list {
+  margin: 1% 0% 0% 10%;
+}
+
+main #hotel-list ul {
+  width: 20%;
+  float: left;
+  margin: .5em 1.5em .5em 0em;
+}
+
+main #hotel-list ul li {
+  width: 100%;
+  overflow: hidden;
+  padding: 1%;
+  font-size: 120%;
+}
+
+main #hotel-list ul li img {
+  border-radius: .5em;
+  width: 100%;
+  height: 200px;
+}
+
+main #hotel-list ul li a {
+  font-size: 80%;
+  font-weight: 200;
+}
+
+main #Collections {
+  clear: both;
+  margin: 0% 0% 25% 10%;
+}
+
+main #Collections h2 {
+  clear: both;
+  margin: 0% 0% 1% 0%;
+  font-size: 130%;
+  font-weight: 500;
+  color: #363636;
+}
+
+main #Collections ul {
+  position: relative;
+  width: 20%;
+  float: left;
+  margin: .5em 1.5em .5em 0em;
+}
+
+main #Collections ul li {
+  width: 100%;
+  overflow: hidden;
+  padding: 1%;
+  font-size: 120%;
+}
+
+main #Collections ul li img {
+  border-radius: .5em;
+  width: 100%;
+  height: 300px;
+}
+
+main #Collections ul li ul {
+  width: 95%;
+  position: absolute;
+  top: -2%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 92% 0% 1% 5%;
+  border-radius: .5em;
+}
+
+main #Collections ul li ul li {
+  color: white;
+  width: 100%;
+  font-size: 100%;
+}
+
+main #Collections ul li ul li span {
+  font-size: 75%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "zomato",
+    "liveServer.settings.ignoreFiles": [
+
+
+
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+    "liveServer.settings.mount": [
+    
+    ],
+    "liveServer.settings.port": 0,
+    "git.autofetch": true
+}

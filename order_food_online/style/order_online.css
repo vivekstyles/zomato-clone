@@ -1,0 +1,235 @@
+body{
+    width: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    
+    font-size: 250%;
+    margin:1% 0% 0% 12%;
+}
+header h1 a{
+    text-decoration: none;
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#location{
+    position: absolute;
+    background-color: white;
+    top: .1%;
+    width: 240px;
+    height: 50px; 
+    margin: 1% 0% 0% 25%;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid rgb(232	232	232	);
+    padding-left: 20px;
+    box-shadow: rgb(232	232	232	) 1px 1px 15px 2px;
+}
+
+#location[placeholder]{
+    text-align: center;
+    font-size: 16px;
+}
+
+#hotel{
+    position: absolute;
+    background-color: white;
+    top: .1%;
+    width: 30%;
+    height: 50px; 
+    margin: 1% 0% 0% 41.2%;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid rgb(232	232	232	);
+    padding-left: 20px;
+    box-shadow: rgb(232	232	232	) 1px 1px 15px 2px;
+    font-size: 16px;
+}
+
+#login{
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    text-decoration: none;
+    color: rgb(105	105	105	);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    font-weight: 300;
+    margin: 2% 0% 0% 0%;
+
+
+}
+#login:hover{
+    color: black;
+
+}
+
+#signup{
+    position: absolute;
+    top: 0%;
+    left: 86%;
+    text-decoration: none;
+    color: rgb(105	105	105	);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    font-weight: 300;
+    margin: 2% 0% 0% 0%;
+}
+#signup:hover{
+    color: black;
+}
+#links{
+    margin: 2% 0% 0% 12%;
+}
+
+#online_order ul{
+    margin: 0% 0% 0% 11%;
+}
+#online_order ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 1%;
+}
+
+#online_order ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5em;
+    object-fit:cover;
+}
+
+main{
+    clear: both;
+    border-top: 1px solid rgb(232	232	232	);
+    margin: 1% 0% 0% 0%;
+}
+
+main section ul{
+    margin: 0% 0% 0% 11%;
+}
+
+#filters{
+    position:sticky;
+    top: 0%;
+    z-index: 1;
+    background-color:red;
+    box-shadow: 0px 30px 0px 30px white;
+
+}
+
+#filters ul li{
+    float: left;
+    list-style: none;
+    padding: 1%;
+    border-radius: .5em;
+    border: 1px solid rgb(207	207	207	);
+    padding: .5%;
+    margin: 1% 1% 1% 1%;
+}
+
+#first_order h2{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 200%;
+    font-weight:500;
+    padding: 2.5% 1% 2.5% 1%;
+    margin: 0% 0% 0% 11%;
+}
+#first_order{
+    clear: both;
+    background-color: rgb(248	248	248	);
+}
+#first_order ul{
+    width: auto;
+    height: 20em; 
+}
+#first_order ul li{
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    margin: 0% 1% 0% 1%;
+}
+#first_order img{
+    height: 10em;
+    width: 14em;
+    border-radius: .5em;
+}
+
+#first_order p{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(54	54	54);
+    font-size: 130%;
+    font-weight: 500;
+    padding: 1%;
+    margin: 5% 0% 50% 0%;
+}
+#order-food{
+    z-index: 0;
+    position:sticky;
+    height:auto;
+    overflow:scroll;
+    clear: both;
+}
+#order-food h2{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 200%;
+    font-weight:500;
+    padding: 2.5% 1% 2.5% 1%;
+    margin: 0% 0% 0% 10%;
+    clear:both;
+}
+#order-food ul{
+    margin: 0% 3% 0% 6%;
+    padding: 0%;
+}
+#order-food ul li{
+    float: left;
+    list-style-type: none;
+    margin: 0% 7% 5% 5%;
+}
+#order-food img{
+    border-radius: .5em;
+}
+#order-food ul li ul{
+    height: 14em;
+    width: 14em;
+}
+
+#order-food #hotel-name{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 130%;
+    font-weight: 500;
+    padding: 0%;
+}
+
+#order-food ul li ul li #rating{
+    height: 10%;
+    width:10%;
+    margin-top: 5px;
+    position:inherit;
+
+    /* padding:2px; */
+}
+#order-food ul li ul #rating-li{
+    font-weight: 500;
+}
+
+#order-food ul li ul li{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(54	54	54);
+    font-size: 100%;
+    font-weight: 300;
+    padding: 0% 0% 0% 0% ;
+    margin: 0% 0% 3% 0% ;
+    width:100%;
+}
+
+.span-li{
+    font-weight: bold;
+}

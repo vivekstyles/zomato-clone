@@ -1,0 +1,224 @@
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#reviews-aside h2 {
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#reviews-aside #main-continer {
+  margin: 5% 0% 0% 0%;
+}
+
+#reviews-aside #main-continer img {
+  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 35%;
+}
+
+#reviews-aside #main-continer p {
+  padding: 4%;
+  text-align: center;
+  color: #363636;
+  font-size: 130%;
+  font-weight: 300;
+}
+
+#photos-aside h2 {
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#photos-aside #main-continer {
+  margin: 5% 0% 0% 0%;
+}
+
+#photos-aside #main-continer img {
+  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 35%;
+}
+
+#photos-aside #main-continer p {
+  padding: 4%;
+  text-align: center;
+  color: #363636;
+  font-size: 130%;
+  font-weight: 300;
+}
+
+#followers-aside h2 {
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#followers-aside #main-continer {
+  margin: 3% 0% 0% 0%;
+}
+
+#followers-aside #main-continer #button-1 {
+  background-color: white;
+  padding: .6em 1em;
+  border: 1px solid #b5b5b5;
+  border-radius: .4em;
+  font-size: 90%;
+  font-weight: 300;
+  color: #b8b8b8;
+}
+
+#followers-aside #main-continer #button-1:hover {
+  background-color: #f8f8f8;
+}
+
+#followers-aside #main-continer #button-2 {
+  background-color: #ea5a6b;
+  margin: 0% 0% 0% 2%;
+  padding: .6em 1em;
+  border: 1px solid #ea5a6b;
+  border-radius: .4em;
+  font-size: 90%;
+  font-weight: 300;
+  color: white;
+}
+
+#followers-aside #main-continer #button-2:hover {
+  background-color: #fc4d4d;
+}
+
+#followers-aside #main-continer img {
+  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 38%;
+}
+
+#followers-aside #main-continer p {
+  padding: 4%;
+  text-align: center;
+  color: #363636;
+  font-size: 130%;
+  font-weight: 300;
+}
+
+#viewed-aside h2 {
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#viewed-aside #viewed-tag ul ul {
+  width: 30%;
+  float: left;
+  margin: 1% 2% 0% 0%;
+}
+
+#viewed-aside #viewed-tag ul ul li {
+  color: #1c1c1c;
+  font-size: 100%;
+  margin: 2% 0%;
+}
+
+#viewed-aside #viewed-tag ul ul li img {
+  width: 100%;
+  height: 160px;
+}
+
+#viewed-aside #viewed-tag ul ul li span {
+  color: #363636;
+  font-size: 90%;
+}
+
+#viewed-aside #main-continer {
+  margin: 5% 0% 0% 0%;
+}
+
+#viewed-aside #main-continer img {
+  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 35%;
+}
+
+#viewed-aside #main-continer p {
+  padding: 4%;
+  text-align: center;
+  color: #363636;
+  font-size: 130%;
+  font-weight: 300;
+}
+
+#blog-aside h2 {
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#blog-aside #main-continer {
+  margin: 5% 0% 0% 0%;
+}
+
+#blog-aside #main-continer img {
+  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 35%;
+}
+
+#blog-aside #main-continer p {
+  padding: 4%;
+  text-align: center;
+  color: #363636;
+  font-size: 130%;
+  font-weight: 300;
+}
+
+#address-aside h2 {
+  color: #1c1c1c;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#address-aside #main-continer {
+  margin: 5% 0% 0% 0%;
+}
+
+#address-aside #main-continer img {
+  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 35%;
+}
+
+#address-aside #main-continer p {
+  padding: 4%;
+  text-align: center;
+  color: #363636;
+  font-size: 130%;
+  font-weight: 300;
+}
+
+#address-aside #address-form {
+  width: 100%;
+  height: 300px;
+  border: 1px solid lightgrey;
+}
+
+#address-aside #address-form input {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  border: none;
+}
+
+#address-aside #address-form input[placeholder] {
+  font-size: 100%;
+}
+/*# sourceMappingURL=reviews.css.map */

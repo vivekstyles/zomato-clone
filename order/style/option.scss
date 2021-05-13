@@ -1,0 +1,231 @@
+@import "../../dinning/style/variables";
+
+#section-2 {
+    width: 100%;
+    clear: both;
+    border: none;
+    float: left;
+
+    nav {
+    padding: 1% 0%;
+    border-bottom: 4px solid rgb(235, 234, 234);
+    border-top: none;
+    float: left;
+    margin-top: 2%;
+    width: 100%;
+    padding-bottom: 1.8em;
+    position: sticky;
+    top: 16%;
+    background-color:white;
+    z-index: 2;
+    ul {
+
+        li {
+        display: inline;
+        font-size: 150%;
+        font-weight: 800;
+        color: grey;
+        margin: 0% 6% 0% 0%;
+        padding: 2% 0%;
+        &:hover{
+            border-bottom: 4px solid rgb(255, 90, 90);
+        }
+        }
+    }
+    }
+  aside {
+    clear: both;
+    float: left;
+    width: 20%;
+    margin: 1% 0% 0% 0%;
+    padding: 0% 0% 0% 2%;
+    position: sticky;
+    top: 24%;
+
+    ul {
+      width: 100%;
+      li {
+        font-size: 100%;
+        font-weight: 300;
+        width: 100%;
+        padding: 5% 1.5%;
+        border-right: white 4px solid;
+
+        &:hover {
+          border-right: $zomato-brand-color 4px solid;
+          background: -webkit-linear-gradient(
+            10deg,
+            white 10px,
+            rgb(255, 177, 177)
+          );
+          color: $zomato-brand-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  main {
+    clear: right;
+    float: left;
+    width:75%;
+  
+    border-left: 1px solid lightgrey;
+    margin: 1% 0% 0% 1%;
+    padding: 0% 0% 0% 1%;
+
+    h1 {
+      padding: 1% 0%;
+      font-weight: 500;
+      font-size: 150%;
+      position: unset;
+      float: left;
+    }
+
+    #search-bar {
+      input {
+        
+        float: right;
+        width: 35%;
+        padding: 1.5% 0%;
+        border-radius: 0.5em;
+        border: 1px solid lightgrey;
+        &::placeholder {
+          font-size: 150%;
+          text-align: center;
+        }
+      }
+    }
+    p {
+        clear: both;
+        color: grey;
+        font-weight: 200;
+        font-size: 85%;
+    }
+    ul {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      li {
+        display: inline-block;
+        margin-right: 3%;
+        #offer-container-1 {
+          width: 100%;
+          background-color: red;
+          padding: 6%;
+          border-radius: 0.1em;
+
+          h3 {
+            color: white;
+            font-size: 65%;
+          }
+          p {
+            color: white;
+            font-weight: 500;
+            font-size: 65%;
+          }
+        }
+        #offer-container-2 {
+          width: 100%;
+          background-color: rgb(2, 102, 214);
+          padding: 6%;
+          border-radius: 0.1em;
+
+          h3 {
+            color: white;
+            font-size: 65%;
+          }
+          p {
+            color: white;
+            font-weight: 500;
+            font-size: 65%;
+          }
+        }
+        #offer-container-3 {
+          width: 100%;
+          background-color: rgb(2, 102, 214);
+          padding: 6%;
+          border-radius: 0.1em;
+
+          h3 {
+            color: white;
+            font-size: 65%;
+          }
+          p {
+            color: white;
+            font-weight: 500;
+            font-size: 65%;
+          }
+        }
+      }
+    }
+    span {
+      color: $secondry-black-color;
+      font-size: 90%;
+      font-weight: 400;
+    }
+    #recommend-heading {
+        padding: 2% 0%;
+        font-weight: 500;
+        font-size: 150%;
+        margin-top: 2%;
+        background-color: white;
+        position: sticky;
+        top: 23%;
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        
+    }
+    .food-list {
+      clear: both;
+      width: 99.5%;
+      float: left;
+      margin-bottom: 4%;
+      padding: 1% 0%;
+      img {
+        width: 18%;
+        border-radius: 0.5em;
+        float: left;
+      }
+      ul {
+        width: 50%;
+        float: left;
+        clear: right;
+        margin: 0% 2%;
+        padding: 0%;
+
+        li {
+          display: block;
+          h3 {
+            font-weight: 500;
+          }
+          p {
+            font-size: 90%;
+            color: $primary-black-color;
+            font-weight: 300;
+            padding: 1.5% 0%;
+          }
+          #p-dis {
+            color: grey;
+            font-weight: 200;
+          }
+        }
+      }
+      input {
+        float: right;
+        margin: 2% 5% 5% 5%;
+        padding: 0.5em 1.4em;
+        color: $zomato-brand-color;
+        border: 1px solid grey;
+        border-radius: 0.5em;
+        background-color: white;
+        font-size: 100%;
+
+        &:hover{
+          color: white;
+          background-color: $zomato-brand-color;
+          border: 1px solid $zomato-brand-color;
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}

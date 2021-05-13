@@ -1,0 +1,78 @@
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#user-profile {
+  position: absolute;
+  right: 10%;
+  top: 2%;
+}
+
+#user-profile ul {
+  position: relative;
+  width: 100%;
+  padding: 0em 0em 4em 0em;
+}
+
+#user-profile ul:hover > li ul {
+  position: absolute;
+  left: 30%;
+  z-index: 10;
+  content: " ";
+  display: block;
+}
+
+#user-profile ul li {
+  float: left;
+  margin: 0em;
+}
+
+#user-profile ul li img {
+  margin: 0% 0% 0% 50%;
+  border-radius: 5em;
+  width: 40%;
+  padding: 0% 0% 0% 0%;
+}
+
+#user-profile ul li a {
+  color: white;
+  padding: 0em;
+  margin: 20% 0% 0% 0%;
+}
+
+#user-profile ul li ul {
+  padding: 6% 0% 0% 0%;
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding-left: 20%;
+  font-size: 90%;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 1em;
+  margin-top: 10%;
+}
+
+#user-profile ul li ul li {
+  width: 100%;
+  float: none;
+  margin: 0.2em 0.5em 0.2em 0em;
+}
+
+#user-profile ul li ul li a {
+  margin: 0.5em 0.5em 0.5em 0em;
+  color: #1c1c1c;
+}
+
+#user-profile ul li ul li a:hover {
+  color: #ea5a6b;
+}
+/*# sourceMappingURL=nav_bar.css.map */

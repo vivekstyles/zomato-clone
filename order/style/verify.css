@@ -1,0 +1,434 @@
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid lightgrey;
+}
+
+header a {
+  color: #ea5a6b;
+  width: 30%;
+  float: left;
+  text-align: right;
+  margin: 2% 5% 0% 0%;
+}
+
+header img {
+  width: 12%;
+  height: 10%;
+  float: left;
+  margin: 1% 5% 0% 5%;
+}
+
+header ul {
+  float: left;
+  width: 30%;
+  margin: 2% 10% 0% 0%;
+}
+
+header ul li {
+  float: left;
+  padding-left: 20em;
+  padding-top: .5%;
+}
+
+header ul li img {
+  position: absolute;
+  width: 3%;
+  height: 5.2%;
+  top: 1%;
+  right: 16.5%;
+  border-radius: 5em;
+}
+
+main {
+  clear: both;
+  width: 70%;
+  margin-left: 15%;
+}
+
+main h1 {
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+section {
+  width: 59.5%;
+  float: left;
+  margin: 2% 0% 0% 0%;
+}
+
+section #first-container {
+  padding: 4% 4%;
+  margin: 0% 0% 0% 0%;
+  border: 1px solid lightgrey;
+  border-radius: .5em;
+}
+
+section #first-container h2 {
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+section #first-container h2 span {
+  color: #1c1c1c;
+  font-size: 80%;
+}
+
+section #first-container p {
+  color: grey;
+  font-weight: 300;
+  font-size: 90%;
+  padding: 2% 0%;
+}
+
+section #second-container {
+  padding: 4% 4%;
+  margin: 5% 0% 0% 0%;
+  border: 1px solid lightgrey;
+  border-radius: .5em;
+}
+
+section #second-container h2 {
+  font-weight: 400;
+  color: #1c1c1c;
+  padding: 2% 0%;
+}
+
+section #second-container input {
+  padding: 1.2em 10em;
+  margin-left: 1%;
+  background-color: white;
+  border: 1px lightgrey dashed;
+  border-radius: .5em;
+  font-size: 110%;
+}
+
+section #second-container input:focus {
+  padding: 4em 10em;
+}
+
+section #second-container input::placeholder {
+  color: #ea5a6b;
+}
+
+section #third-container {
+  padding: 4% 4%;
+  margin: 5% 0% 0% 0%;
+  border: 1px solid lightgrey;
+  border-radius: .5em;
+}
+
+section #third-container h2 {
+  font-weight: 500;
+  color: #1c1c1c;
+  color: #5e5c5c;
+}
+
+section #third-container p {
+  color: grey;
+  font-weight: 300;
+  font-size: 90%;
+  padding: 2% 0%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  position: relative;
+  margin: 2% 0% 0% 2%;
+  padding: 0%;
+}
+
+aside h2 {
+  color: #363636;
+  font-size: 120%;
+  font-weight: 500;
+  padding: 0% 0% 4% 0%;
+}
+
+aside #order-from-continer {
+  background-color: #eeeaea;
+  padding: 4%;
+  border-radius: .5em .5em 0em 0em;
+}
+
+aside #order-from-continer h4 {
+  color: #363636;
+  font-size: 90%;
+  padding: 1% 1% 4% 1%;
+  font-weight: 400;
+}
+
+aside #order-from-continer h3 {
+  color: #1c1c1c;
+  font-size: 100%;
+  padding: 1%;
+}
+
+aside #order-from-continer p {
+  font-size: 90%;
+  font-weight: 300;
+  padding: 1%;
+  color: #363636;
+}
+
+aside #orders-continer {
+  padding: 5%;
+}
+
+aside #orders-continer ul {
+  padding: 0% 0% 10% 0%;
+  float: left;
+  width: 60%;
+}
+
+aside #orders-continer ul li {
+  font-size: 100%;
+}
+
+aside #orders-continer ul #price-list-tag {
+  font-size: 100%;
+  font-weight: 300;
+  padding: 4% 0%;
+}
+
+aside #orders-continer #qunatiy {
+  border: 1px solid black;
+  margin: 0% 0% 0% 12%;
+  width: 26%;
+  float: left;
+  border-radius: .5em;
+}
+
+aside #orders-continer #qunatiy input {
+  width: 38%;
+  margin: 0%;
+  background-color: #f38d8d;
+  padding: 8% 0%;
+  border: none;
+}
+
+aside #orders-continer #qunatiy input[value] {
+  text-align: center;
+}
+
+aside #orders-continer #qunatiy .min-and-max {
+  width: 25%;
+  margin: 0%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 6% 0%;
+}
+
+aside #orders-continer #qunatiy .min-and-max:hover {
+  cursor: pointer;
+}
+
+aside #orders-continer #qunatiy .min-and-max[value] {
+  text-align: center;
+  color: #ea5a6b;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+aside #orders-continer p {
+  float: left;
+  text-align: right;
+  padding: 1% 0% 1% 0%;
+  font-size: 100%;
+  font-weight: 500;
+  margin: 1% 0% 0% 15%;
+}
+
+aside #orders-continer a {
+  float: left;
+  clear: both;
+  margin: 5% 5% 5% 20%;
+  border-bottom: 1px dashed grey;
+  font-size: 80%;
+  color: grey;
+}
+
+aside #support {
+  clear: both;
+  background-color: #eeeaea;
+  padding: 5%;
+}
+
+aside #support h3 {
+  color: gray;
+  font-size: 100%;
+  font-weight: 300;
+  padding-bottom: 4%;
+  margin: 0% 0% 0% 0%;
+}
+
+aside #support p {
+  font-size: 90%;
+  font-weight: 300;
+  color: #363636;
+  margin: 0% 0% 0% 0%;
+}
+
+aside #support button {
+  background-color: white;
+  padding: .2em .8em;
+  border: none;
+  margin: 5% 2% 0% 0%;
+  border-radius: .5em;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+aside #offer {
+  padding: 5%;
+}
+
+aside #offer h3 {
+  font-weight: 600;
+  color: black;
+  font-size: 100%;
+  margin-bottom: 2%;
+}
+
+aside #offer a {
+  color: #1c1c1c;
+}
+
+aside #offer span {
+  color: #ea5a6b;
+  margin-left: 10%;
+}
+
+aside #sub-total {
+  background-color: #fefcf9;
+  padding: 5%;
+  border-radius: 0em 0em .5em .5em;
+}
+
+aside #sub-total table .subtotal {
+  padding: 2% 0%;
+  color: black;
+  font-size: 90%;
+  text-align: left;
+}
+
+aside #sub-total table .subtotal-1 {
+  padding: 0% 0%;
+  color: black;
+  font-size: 90%;
+  text-align: right;
+}
+
+aside #sub-total table .tax {
+  color: #363636;
+  margin: 0% 0% 0% 5%;
+  font-size: 90%;
+  padding-right: 10%;
+  text-align: left;
+  width: 90%;
+}
+
+aside #sub-total table .tax-1 {
+  color: #363636;
+  margin: 0% 0% 0% 5%;
+  font-size: 90%;
+  text-align: right;
+}
+
+aside #sub-total table .grandtotal {
+  padding: 2% 0%;
+  color: black;
+  font-size: 100%;
+  text-align: left;
+}
+
+aside #sub-total table .grandtotal-1 {
+  padding: 0% 0%;
+  color: black;
+  font-size: 100%;
+  text-align: right;
+}
+
+aside #ordering-for {
+  padding: 5%;
+}
+
+aside #ordering-for #ord-tag {
+  float: left;
+  width: 70%;
+}
+
+aside #ordering-for #ord-tag h3 {
+  color: gray;
+  font-size: 90%;
+  font-weight: 400;
+}
+
+aside #ordering-for #ord-tag p {
+  width: 100%;
+  color: black;
+  font-size: 100%;
+  font-weight: 400;
+  padding: 2% 0% 2% 0%;
+  text-align: left;
+}
+
+aside #ordering-for p {
+  float: left;
+  width: 30%;
+  color: #ea5a6b;
+  text-align: right;
+  padding: 3% 0% 2% 0%;
+}
+
+aside #non-refund {
+  clear: both;
+  padding: 5%;
+}
+
+aside #non-refund p {
+  color: #ea5a6b;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+aside #button {
+  position: absolute;
+  width: 100%;
+  top: 62%;
+}
+
+aside #button button {
+  position: fixed;
+  bottom: -6%;
+  padding: 1em 1em;
+  margin: 5% 0;
+  width: 21%;
+  color: white;
+  background-color: #ea5a6b;
+  border-radius: .5em;
+  border: none;
+  font-size: 100%;
+}
+
+aside #button button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=verify.css.map */

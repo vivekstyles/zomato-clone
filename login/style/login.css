@@ -1,22 +1,41 @@
 body{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#close-button {
+    position: absolute;
+    top: 2%;
+    left: 95%; 
+    font-size: 200%;
+    font-weight:lighter;
+}
+#close-button a{
+    color: black;
+}
+
+#main{
+    position: absolute;
     width: 50%;
     margin-left: 25%;
     margin-top: 5%;
     border: 1px solid grey;
-    border-radius: 1rem;
-    background-color: rgb(234	90	107	);
-    height: fit-content;
-}
-
-main{
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.8);
     border-radius: 1rem;
     height: 70%;
+    top: 0%;
 }
 body h1{
     color: rgb(80	80	80	);
     text-align: left;
     margin-left: 5%;
+    margin-top: 2em;
 }
 body label{
     margin-left: 5%;
@@ -76,13 +95,48 @@ body a {
 
  #error_message p{
      color: crimson;
-     margin-left: 16%;
+     margin-left: 34%;
      margin-top: 0;
      padding: 0.5% 1% 1% 1%;
      position: absolute;
      text-shadow: black;
+     font-family: '.AppleSystemUIFont';
+     font-size: 100%;
 }
 #account {
+    margin-top: 1em;
     margin-left: 10%;
     color: rgb(80	80	80);
+}
+
+main #orders{
+    clear: both;
+}
+main #orders ul{
+    float: left;
+    margin: 2em 0em 0em 10.5em;
+
+}
+main #orders ul li{
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 4px 0px 15px 0px; 
+    border-radius: 1em 1em 1em 1em;
+    border: 1px solid rgb(232	232	232	);
+    margin-right: 5px;
+}
+main #orders ul li img{
+    border-radius: 1em 1em 0em 0em;
+    border: 0px solid rgb(232	232	232	);
+}
+main #orders ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 120%;
+    padding: 14px 30px;
+    color: rgb(54	54	54	);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 520;
+    
 }

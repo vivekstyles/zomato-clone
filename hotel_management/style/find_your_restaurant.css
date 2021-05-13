@@ -1,0 +1,182 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+}
+#dark{
+    box-shadow: black 1px 1px 30px 20px;
+}
+#img-1{
+    position:absolute;
+    width: 100%;
+}
+
+header #img-1 #zomato-logo{
+    float: left;
+    margin: 1% 0% 0% 18%;
+}
+
+header #img-1 ul{
+    clear: right;
+    width: 30%;
+    margin: .4% 0% 0% 60%;
+}
+header #img-1 ul li a{
+    color: white;
+    font-size: 115%;
+    font-weight: 300;
+}
+header #img-1 ul li{
+    float: left;
+}
+header #img-1 ul #contact-tag{
+    margin: 1em 0em 0em 3em;
+}
+header #img-1 ul #logo-tag{
+    margin: .8em 0em 0em 3em;
+}
+header #img-1 ul #logo-tag img{
+    height: 30%;
+    width: 30%;
+    border-radius: 5em;
+    margin: 0em 0em 0em 0em;
+
+}
+header #img-1 ul #user-name-tag{
+    margin: 1.2em 0em 0em -3.5em;
+}
+header #find-tag{
+    position: absolute;
+    top: 18%;
+    left: 18%;
+}
+header #find-tag h1{
+    color: white;
+    font-weight: 500;
+    font-size: 230%;
+    margin: .4em 0em .4em 0em;
+}
+header #find-tag p{
+    color: white;
+    font-weight: 500;
+    font-size: 100%;
+    margin: 1.2em 0em 1.2em 0em;
+}
+header #find-tag #input-1{
+    position: relative;
+    padding: 1em 3em;
+    margin: 0em;
+    border: none;
+    border-radius: .5em 0em 0em .5em;
+
+}
+header #find-tag #input-2{
+    position: absolute;
+    padding: 1em 8em;
+    margin: 0em 0em 0em 1em;
+    border: none;
+    width: 100%;
+    border-radius: 0em .5em .5em 0em; 
+}
+header #find-tag #input-2[placeholder],#input-1[placeholder]{
+    margin-left: 0em;
+    padding-left: 1em;
+    font-size: 95%;
+
+}
+header #drop-login-container{
+    display: block;
+    width: 126%;
+    background-color: white;
+    border-top: 2px solid rgb(231	231	231	);
+    margin: 0% 0% 0% 50%;
+    box-shadow: rgb(231	231	231	) 1px 1px 2px 1px;
+}
+header #find-tag:hover > #drop-login-container p{
+    display: none;
+}
+header #drop-login-container p{
+    color: black;
+    margin-left: 30%;
+}
+header #drop-login-container input{
+    margin: 0% 2% 4% 31%;
+    padding: 1em 1em;
+    background-color: rgb(39	129	231	);
+    border: none;
+    border-radius: .5em;
+    color: white;
+    font-size: 100%;
+} 
+main{
+    width: 100%;
+    margin-top: 4%;
+}
+main #Benefits-tag{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    width: 70%;
+}
+main #Benefits-tag h1{
+    font-weight: 500;
+    font-size: 230%;
+    margin: 0em 0em .4em 0em;
+}
+
+main #Benefits-tag p{
+    color: rgb(105	105	105	);
+    font-weight: 500;
+    font-size: 100%;
+    margin: 1.2em 0em 1.2em 0em;
+}
+
+main #Benefits-tag ul{
+ 
+}
+main #Benefits-tag #unorder-list-tag .list-child{
+    border-radius: .4em;
+    float: left;
+    width: 12%;
+    margin: 1em 2em 1em 0em;
+    padding: 1em;
+    background-color: white;
+    box-shadow: rgb(230	230	230	) -1px 1px 10px 2px;
+}
+main #Benefits-tag #unorder-list-tag .list-child ul{
+    margin: 0% 0% 0% 0%; 
+    padding: 0%;
+    width: 150%;
+}
+main #Benefits-tag #unorder-list-tag .list-child ul .step-1-img-tag{
+    width: 100%;
+    margin: 0% 0% 0% 10%;
+    padding: 0em 0em 1em 0em;
+}
+main #Benefits-tag #unorder-list-tag .list-child ul .step-1-img-tag img{
+    background-color: rgb(247	250	255	);
+    height: 10%;
+    width: 10%;
+    padding: 2em;
+    margin: 0% 0% 0% 0%;
+    border-radius: 3em;
+}
+main #Benefits-tag #unorder-list-tag .list-child ul .step-1-heading-tag{
+    font-size: 100%;
+    font-weight: 500;
+    margin: 0% 0% 0% 12%; 
+    padding: 1% 0%;
+}
+
+main #Benefits-tag #unorder-list-tag .list-child ul .step-1-para-tag{
+    margin: 0% 0% 0% 5%; 
+    font-size: 80%;
+    font-weight: 400;
+    padding: 1% 0%;
+    color: rgb(106	106	106	);
+}

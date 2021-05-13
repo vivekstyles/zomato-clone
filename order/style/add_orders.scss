@@ -1,0 +1,293 @@
+@import '../../dinning/style/variables';
+
+body{
+    width: 100%;
+}
+
+#header-1{
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    img{
+        width: 10%;
+        height: 12%;
+        margin: 1em 1em 1em 10em;
+        float: left;
+    }
+    #input-border{
+        border: 1px solid lightgrey;
+        width: 50%;
+        margin: .5% 2% 1% 2%;
+        float: left;
+        border-radius: .5em;
+        box-shadow: lightgrey 1px 1px 10px 1px;
+        padding-left: 1%;
+    }
+    #location{
+        padding: 2% 1%;
+        width: 25%;
+        border: none;
+        border-right: lightgrey solid 2px;
+    }
+    input{
+        padding: 2% 1%;
+        width: 60%;
+        border: none;
+    }
+    input[placeholder]{
+        text-align: center;
+        font-size: 100%;
+    }
+    ul{
+        position: relative;
+        float: left;
+        width: 20%;
+        margin: .5% 0% 0% 0%;
+        
+        #user-name{
+            margin: 2.5% 0% 0% 0%;
+            font-size: 120%;
+        }
+        li{
+            font-size: 100%;
+            img{
+                width: 15%;
+                height: 15%;
+                margin: 0% 5% 0% 0%;
+                border-radius: 5em;
+            }
+            &:hover > ul{
+                position: absolute;
+                z-index: 10;
+                content: " ";
+                display:block;
+            }
+        }
+        ul{
+            padding-top: 5%;
+            display: none;
+            width: 60%;
+            text-align: left;
+            padding-left: 20%;
+            font-size: 90%;
+            background-color: rgba(255,255,255,2);
+            border:1px solid lightgrey;
+            border-radius: 1em;
+
+            li{
+                margin: .5em .5em .5em 0em;
+                a{
+                    &:hover{
+                        color: $zomato-brand-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav{
+    clear: both;
+    font-size: 80%;
+    margin: 0%;
+    padding: .5% 0% 1% 10%;
+    border-top:lightgrey solid 1px;
+
+    a{
+        color: $secondry-black-color;
+        font-weight: 300;
+
+        span{
+            color: $grey-color;
+        }
+    }
+}
+
+main{
+    clear: both;
+    width: 80%;
+    margin: 0% 0% 0% 10%;
+    position: unset;
+
+    img{
+        width: 62%;
+        float: left;
+    }
+    #box-image{
+        float: left;
+        clear: right;
+        width: 18.5%;
+        img{
+            width: 96%;
+            margin: 0% 2.5% 2.5% 2.5%;
+        }
+    }
+    #input-image{
+        width: 18.5%;
+        float: left;
+        clear: right;
+        img{
+            width: 98%;
+            margin: 0% 2.5% 2.5% 2.5%;
+        }
+        input[src]{
+        width: 98%;
+        margin: 0% 2.5% 2.5% 2.5%;
+        padding: 0%;
+        }
+        p{
+            position: absolute;
+            top: 45%;
+            right: 13%;
+            font-size: 150%;
+            color: black;
+        }
+        #plus{
+            position: absolute;
+            top: 38%;
+            right: 17%;
+            font-size: 300%;
+            color: black;
+        }
+    }
+}
+
+#main-image{
+    width: 80%;
+    position:absolute;
+    top: 60%;
+
+    #section-1{
+        clear: both;
+        width: 100%;
+        margin:2% 0% 0% 0%;
+        position: sticky;
+        float: left;
+        top: 0%;
+        background-color: white;
+        z-index: 1;
+        #food-details{
+            width: 60%;
+            float: left;
+            h1{
+                font-size: 240%;
+                font-weight: 500;
+            }
+            a{
+                font-size: 95%;
+                padding: 2% 0%;
+                span{
+                    font-size: 100%;
+                    color: grey;
+                }
+            }
+            p{
+                padding: 1% 0%;
+                color: grey;
+                font-size: 90%;
+                font-weight: 200;
+                span{
+                    color: orange;
+                }
+            }
+        }
+        #dining-rating{
+            width: 16%;
+            margin: 0% 1%;
+            float: left;
+            position: sticky;
+            right: 0%;
+            img{
+                width: 15%;
+                margin-left: 64%;
+            }
+            p{
+                font-size: 120%;
+                text-align: right;
+            }
+            .p{
+                font-size: 90%;
+                font-weight: 300;
+                text-align: right;
+                color: $secondry-black-color;
+                border-bottom: 1px dashed grey;
+                padding: 2% 0%;
+                border-bottom-width: 40%;
+            }
+    
+        }
+        #delivery-rating{
+            width: 16%;
+            margin: 0% 1%;
+            float: left;
+            img{
+                width: 15%;
+                margin-left: 64%;
+            }
+            p{
+                text-align: right;
+                font-size: 120%;
+            }
+            .p{
+                font-size: 90%;
+                font-weight: 300;
+                text-align: right;
+                color: $secondry-black-color;
+                border-bottom: 1px dashed grey;
+                padding: 2% 0%;
+            }
+        }
+        nav{
+            float: left;
+            margin: 2% 0% 0% 0%;
+            border: none;
+            width: 60%;
+            padding: 0%;
+            ul{
+                li{
+                    display: inline;
+                    margin: 0% 1% 0% 0%;
+                    button{
+                        padding:  .5em 1em;
+                        border: 1px solid $secondry-black-color;
+                        font-size: 120%;
+                        font-weight: 300;
+                        border-radius: .5em;
+                        background-color: white;
+                        color: $primary-black-color;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $zomato-brand-color;
+                            color: white;
+                            border-color: $zomato-brand-color;
+                        }
+                        &:visited{
+                            background-color: $zomato-brand-color;
+                            color: white;
+                            border-color: $zomato-brand-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#section-3{
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: 10% 0%;
+    .last-container{
+        h3{
+            font-size: 100% ;
+            font-weight: 500;
+            margin: 2% 0%;
+            
+        }
+        a{
+            font-size: 90%;
+            font-weight: 300;
+            color: grey;
+            text-indent: 50rem;
+        }
+    }
+}
