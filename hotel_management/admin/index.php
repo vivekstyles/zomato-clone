@@ -20,6 +20,13 @@ if (!empty($_GET['error'])) {
     # code...
     $error = '';
 }
+if (!empty($_GET['error1'])) {
+    # code...
+    $error = $_GET['error1'];
+} else {
+    # code...
+    $error = '';
+}
 
 if (isset($_POST['action'])) {
     $action = $_POST['action'];
@@ -126,8 +133,11 @@ switch ($action) {
 
             $restaurant_name = $_SESSION['hotel'];
             $restaurant_name = $restaurant_name->get_restarunt_name();
+            if (isset($_GET['select'])) {
+                $select = $_GET['select'];
+            }
 
-            include './upload_img.php';
+            include "./upload_img.php";
             exit();
 
         }
@@ -147,18 +157,20 @@ switch ($action) {
         }
         $price = $_POST['price'];
         $category = $_POST['category'];
+        $item = $_POST['item'];
+        $aboutfood = $_POST['aboutfood'];
         $veg_type = $_POST['veg_type'];
         $filename = addslashes($_FILES["image"]["name"]);
         $image = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
         $filetype = addslashes($_FILES["image"]["type"]);
-        $ary = array('jpg','jpeg','png');
+        $ary = array('jpg','jpeg','png','webp');
         $ext = pathinfo($filename,PATHINFO_EXTENSION);
         if(!empty($filename)){
             if(in_array($ext, $ary)){
                 $footData = new UploadMenuClass($hotel->get_mobile_number());
-                $res = $footData->insert_image_by_category($category,$price,$veg_type,$image);
+                $res = $footData->insert_image_by_category($category,$item,$aboutfood,$price,$veg_type,$image);
                 if ($res) {
-                    include './result.php';
+                    header("location:.?action=myHotel&select=foot_image&error1=true");
                 }
                 else{
                     $error = $res;
@@ -174,7 +186,7 @@ switch ($action) {
             $select = $_GET['select'];
         }
         if ($_FILES['banner_image']['tmp_name'] == false) {
-            header('location:.?action=myHotel&error=Please select image');
+            header('location:.?action=myHotel&select=hotel_picture&error=Please select image');
             exit();
         }
         $about = $_POST['about'];
@@ -182,7 +194,7 @@ switch ($action) {
         $filename = addslashes($_FILES["banner_image"]["name"]);
         $image = addslashes(file_get_contents($_FILES["banner_image"]["tmp_name"]));
         $filetype = addslashes($_FILES["banner_image"]["type"]);
-        $ary = array('jpg','jpeg','png');
+        $ary = array('jpg','jpeg','png','webp');
         $ext = pathinfo($filename,PATHINFO_EXTENSION);
 
         if (!empty($filename)) {
@@ -190,11 +202,12 @@ switch ($action) {
                 $banner  = new UploadMenuClass($hotel->get_mobile_number());
                 $res = $banner->insert_hotel_banner($image,$about,$per_person);
                 if ($res) {
-                    include './result.php';
+                    header("location:.?action=myHotel&select=hotel_picture&error1=true");
+
                 }
                 else{
                     $error = $res;
-                    header("location:.?action=myHotel&error='$error'");
+                    header("location:.?action=myHotel&select=hotel_picture&error='$error'");
                     exit();
                 }
             }
@@ -213,7 +226,7 @@ switch ($action) {
         $filename = addslashes($_FILES["blog_image"]["name"]);
         $image = addslashes(file_get_contents($_FILES["blog_image"]["tmp_name"]));
         $filetype = addslashes($_FILES["blog_image"]["type"]);
-        $ary = array('jpg','jpeg','png');
+        $ary = array('jpg','jpeg','png','webp');
         $ext = pathinfo($filename,PATHINFO_EXTENSION);
 
         if (!empty($filename)) {
@@ -221,7 +234,7 @@ switch ($action) {
                 $banner  = new UploadMenuClass($hotel->get_mobile_number());
                 $res = $banner->insert_blog_image($image);
                 if ($res) {
-                    include './result.php';
+                    header("location:.?action=myHotel&select=upload_blog&error1=true");
                 }
                 else{
                     $error = $res;
@@ -230,6 +243,41 @@ switch ($action) {
                 }
             }
         }
+        break;
+
+    case 'insert_menu_image':
+        $hotel = $_SESSION['hotel'];
+        if (isset($_GET['select'])) {
+            $select = $_GET['select'];
+        }
+        if ($_FILES['menu_image']['tmp_name'] == false) {
+            header('location:.?action=myHotel&select=upload_menu&error=Please select image');
+            exit();
+        }
+        
+        $filename = addslashes($_FILES["menu_image"]["name"]);
+        $image = addslashes(file_get_contents($_FILES["menu_image"]["tmp_name"]));
+        $filetype = addslashes($_FILES["menu_image"]["type"]);
+        $ary = array('jpg','jpeg','png','webp');
+        $ext = pathinfo($filename,PATHINFO_EXTENSION);
+
+        if (!empty($filename)) {
+            if(in_array($ext,$ary)){
+                $menu  = new UploadMenuClass($hotel->get_mobile_number());
+                $res = $menu->insert_hotel_menu($image);
+                if ($res) {
+                    // include './result.php';
+                    header("location:.?action=myHotel&select=upload_menu&error1=true");
+
+                }
+                else{
+                    $error = $res;
+                    header("location:.?action=myHotel&error='$error'");
+                    exit();
+                }
+            }
+        }
+        break;
     default:
         # code...
         break;

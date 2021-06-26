@@ -13,5 +13,8 @@
     
     ],
     "liveServer.settings.port": 0,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Spectrum)"
 }

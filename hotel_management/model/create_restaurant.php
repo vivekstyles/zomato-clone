@@ -32,7 +32,7 @@ trait get_restarunt_name_trait
         global $db;
 
         $sql = 'select * from hotel where mobileNo = :mobileNo';
-        $statement = $db->prepare($sql);
+        $statement = $db->prepare($sql) ;
         $statement->bindValue(':mobileNo', $mobileNo);
         $statement->execute();
         $result = $statement->fetchAll();
@@ -193,7 +193,7 @@ class UploadMenuClass
         }
     }
 
-    public function insert_image_by_category($category, $price, $veg_type, $image)
+    public function insert_image_by_category($category, $item, $aboutfood, $price, $veg_type, $image)
     {
         global $db, $mysql_db;
 
@@ -203,7 +203,7 @@ class UploadMenuClass
         $this->image = $image;
 
         $restaurant_name = $this->get_restarunt_name($this->mobileNo); // useing restaurant name from trait method
-        $sql = "insert into images(mobileNo,Restaurant,item,price,veg,img) values('$this->mobileNo','$restaurant_name','$category','$price','$veg_type','$image');";
+        $sql = "insert into images(mobileNo,Restaurant,category,item,aboutfoot,price,veg,img) values('$this->mobileNo','$restaurant_name','$category','$item','$aboutfood','$price','$veg_type','$image');";
         try {
             return $mysql_db->query($sql);
         } catch (\Throwable $th) {
@@ -237,6 +237,16 @@ class UploadMenuClass
     public function insert_blog_image($image){
         global $db, $mysql_db;
         $sql = "insert into hotel_blog_images(mobileNo,image) values('$this->mobileNo','$image')";
+        try {
+            return $mysql_db->query($sql);
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
+    
+    public function insert_hotel_menu($image){
+        global $db, $mysql_db;
+        $sql = "insert into menu(mobileNo,image) values('$this->mobileNo','$image')";
         try {
             return $mysql_db->query($sql);
         } catch (\Throwable $th) {

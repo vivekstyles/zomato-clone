@@ -36,7 +36,7 @@
             <li><img src="../../home/images/wine_2x.png.jpeg" alt=""></li>
             <li id="user-name"><a href=""><?php echo $_SESSION['user_name'];?></a>
                 <ul>
-                    <li><a href="">Profile</a></li>
+                    <li><a href="../../profile/profile/index.php">Profile</a></li>
                     <li><a href="">Notifications</a></li>
                     <li><a href="">Bookmarks</a></li>
                     <li><a href="">Reviews</a></li>
@@ -133,10 +133,11 @@
                 include '../view/activty/followers.php';
             }elseif ($aside === 'viewed') {
                 # code...
+                // $recently_viewed = Online_order_class::get_food_details_by_foodId($_SESSION['recentView']); 
                 include '../view/activty/recently_viewed.php';
             }elseif ($aside === 'bookmarks') {
                 # code...
-                header('location:.');
+
             }elseif ($aside === 'blog') {
                 # code...
                 include '../view/activty/blog_post.php';

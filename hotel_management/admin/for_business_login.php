@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/for_business_login.css">
     <script src="../js/for_business_login.js"></script>
-    <title><?php echo $hotelName; ?></title>
+    <title>For business login</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <li>Contact us</li>
             <li id="user-logo"><a href="../../home/images/wine_2x.png.jpeg"><img src="../../home/images/wine_2x.png.jpeg" alt=""></a></li>
             <?php if (!empty($_SESSION['user_name'])) : ?>
-                <li><?php echo $_SESSION['user_name']; ?></li>
+                <li style="text-transform:capitalize;"><?php echo $_SESSION['user_name']; ?></li>
             <?php endif; ?>
         </ul>
     </header>

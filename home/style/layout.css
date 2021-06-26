@@ -7,7 +7,9 @@ body{
     padding: 0px;
 }
 
-
+.text-capitalize::first-letter{
+    text-transform: capitalize;
+}
 #login {
     color: white;
     border: none;
@@ -139,10 +141,31 @@ main input[placeholder]{
     border-radius: 1em 1em 1em 1em;
     border: 1px solid rgb(232	232	232	);
     margin-right: 5px;
+    margin:1px;
+
+
+}
+#orders ul li:hover{
+    box-shadow: 0px 0px 10px 5px  rgb(231, 230, 230);
+    cursor: pointer;
+}
+
+#orders ul li{
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 0px 0px 15px 0px; 
+    border-radius: 1em 1em 1em 1em;
+    border: 1px solid rgb(232	232	232	);
+    margin-right: 5px;
+
 }
 #orders ul li img{
     border-radius: 1em 1em 0em 0em;
     border: 0px solid rgb(232	232	232	);
+}
+#orders ul .change_colour{
+    background-color:red;
 }
 
 section h2{ 

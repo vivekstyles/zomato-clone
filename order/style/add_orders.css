@@ -14,6 +14,10 @@ body {
   width: 100%;
 }
 
+body a {
+  text-decoration: none;
+}
+
 #header-1 {
   width: 100%;
   margin: 0% 0% 0% 0%;
@@ -140,8 +144,8 @@ main #box-image {
 }
 
 main #box-image img {
-  width: 96%;
-  margin: 0% 2.5% 2.5% 2.5%;
+  width: 98%;
+  margin: 0% 2.5% 2% 2.5%;
 }
 
 main #input-image {
@@ -152,11 +156,10 @@ main #input-image {
 
 main #input-image img {
   width: 98%;
-  margin: 0% 2.5% 2.5% 2.5%;
+  margin: 0% 2.5% 2% 2.5%;
 }
 
 main #input-image input[src] {
-  width: 98%;
   margin: 0% 2.5% 2.5% 2.5%;
   padding: 0%;
 }
@@ -166,7 +169,7 @@ main #input-image p {
   top: 45%;
   right: 13%;
   font-size: 150%;
-  color: black;
+  color: white;
 }
 
 main #input-image #plus {
@@ -174,7 +177,7 @@ main #input-image #plus {
   top: 38%;
   right: 17%;
   font-size: 300%;
-  color: black;
+  color: white;
 }
 
 #main-image {
@@ -212,6 +215,7 @@ main #input-image #plus {
 #main-image #section-1 #food-details a span {
   font-size: 100%;
   color: grey;
+  padding-top: 1%;
 }
 
 #main-image #section-1 #food-details p {
@@ -280,10 +284,15 @@ main #input-image #plus {
 
 #main-image #section-1 nav {
   float: left;
-  margin: 2% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
   border: none;
   width: 60%;
   padding: 0%;
+}
+
+#main-image #section-1 nav ul {
+  margin: 0;
+  padding: 0;
 }
 
 #main-image #section-1 nav ul li {

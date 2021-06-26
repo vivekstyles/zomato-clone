@@ -21,6 +21,7 @@ try {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../style/layout.css">
     <link rel="stylesheet" href="../style/nav_bar.css">
+    <!-- <script src="../js/main.js"></script> -->
 </head>
 
 <body>
@@ -33,7 +34,7 @@ try {
             <div id="user-profile">
                 <ul>
                     <li><img src="../images/wine_2x.png.jpeg" alt="user logo"></li>
-                    <li><a href="#"><?php echo $_SESSION['user_name']; ?></a>
+                    <li><a href="#" class="text-capitalize"><?php echo $_SESSION['user_name']; ?></a>
                         <ul>
                             <li><a href="../../profile/profile/index.php">Profile</a></li>
                             <li><a href="">Notifications</a></li>
@@ -82,9 +83,11 @@ try {
             </ul>
         </div>
 
+        <!-- main start from here.... -->
+
     </main>
     <section>
-        <h2>Collections</h2>
+        <h2 id="first-lists">Collections</h2>
         <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends</p>
         <div id="link">
             <a href="">All collections in Chennai</a>

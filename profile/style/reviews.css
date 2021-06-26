@@ -132,6 +132,8 @@ a {
 #viewed-aside #viewed-tag ul ul li img {
   width: 100%;
   height: 160px;
+  border: solid 1px grey;
+  border-radius: .5em;
 }
 
 #viewed-aside #viewed-tag ul ul li span {

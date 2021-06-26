@@ -1,11 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/add_orders.css">
     <link rel="stylesheet" href="../style/option.css">
+    <script src="../js/add_order.js"></script>
+    <script src="../js/show_menu.js"></script>
+
     <title>Order</title>
 </head>
 <body>
@@ -28,7 +33,7 @@
         <ul>
             <?php if (!empty($_SESSION['user_name'])):?>
             <li><img src="../../home/images/wine_2x.png.jpeg" alt=""></li>
-            <li id="user-name"><a href=""><?php echo $_SESSION['user_name'];?></a>
+            <li id="user-name"><a href="" class="text-capitalize"><?php echo $_SESSION['user_name'];?></a>
                 <ul>
                     <li><a href="../../profile/profile/index.php">Profile</a></li>
                     <li><a href="">Notifications</a></li>
@@ -48,9 +53,9 @@
 /
 India
 /
-Bengaluru
+chennai
 /
-Central Bangalore
+Central chennai
 /
 St. Marks Road
 /
@@ -59,27 +64,27 @@ Leon Grill
 <span>Order Online</span></a>
     </nav>
     <main>
-        <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($hotelId[0]['img']).'"'; ?> alt="" height="385">
+        <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($hotelId[0]['image']).'"'; ?> alt="banner" title='banner' height="384">
+        
         <div id="box-image">
-        <?php foreach($blogImg as $value):?>
-            <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($value['image']).'"'; ?> alt="">
+            <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($blogImg[0]['image']).'"';?> height="190">
             <br>
-            <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($value['image']).'"'; ?> alt="">
+            <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($blogImg[1]['image']).'"'; ?> height="190">
         </div>
+
         <div id="input-image">
-            <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($value['image']).'"'; ?> alt="">
+        <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($blogImg[2]['image']).'"'; ?> height="190">
             <form action="" method="" enctype="">
-                <input type="image" <?php echo 'src="data:image/jpeg;base64,'.base64_encode($value['image']).'"'; ?> alt="">
+            <img <?php echo 'src="data:image/jpeg;base64,'.base64_encode($blogImg[3]['image']).'"'; ?> height="190">
             </form>
-            <?php endforeach; ?>
             <p id="plus">+</p>
             <p>Add photos</p>
         </div>
         <div id="main-image">
             <section id="section-1">
                 <div id="food-details">
-                    <h1><?php echo $hotelId[0]['Restaurant'];?></h1>
-                    <a href="">Quick Bites - Fast Food, Burger, Wraps, Desserts, Beverages <br><span>St. Marks Road</span></a>
+                    <h1 class="text-capitalize"><?php echo $hotelId[0]['Restaurant'];?></h1>
+                    <a href="" class="text-capitalize"><?php echo $hotelId[0]['about_hotel'];?><br><span><?php echo $hotelId[0]['city'];?></span></a>
                     <p><span>Open now</span> - 7am – 12midnight (Today)</p>
                 </div>
 
@@ -119,5 +124,6 @@ Leon Grill
             </section>
         </div>
     </main> 
+    <?php include '../view/show_selected_food.php'?>
 </body>
 </html>

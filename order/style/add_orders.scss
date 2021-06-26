@@ -2,6 +2,9 @@
 
 body{
     width: 100%;
+    a{
+        text-decoration:none;
+    }
 }
 
 #header-1{
@@ -90,7 +93,7 @@ nav{
     font-size: 80%;
     margin: 0%;
     padding: .5% 0% 1% 10%;
-    border-top:lightgrey solid 1px;
+    border-top:lightgrey solid 1px;;
 
     a{
         color: $secondry-black-color;
@@ -117,8 +120,8 @@ main{
         clear: right;
         width: 18.5%;
         img{
-            width: 96%;
-            margin: 0% 2.5% 2.5% 2.5%;
+            width: 98%;
+            margin: 0% 2.5% 2% 2.5%;
         }
     }
     #input-image{
@@ -127,10 +130,9 @@ main{
         clear: right;
         img{
             width: 98%;
-            margin: 0% 2.5% 2.5% 2.5%;
+            margin: 0% 2.5% 2% 2.5%;
         }
         input[src]{
-        width: 98%;
         margin: 0% 2.5% 2.5% 2.5%;
         padding: 0%;
         }
@@ -139,14 +141,14 @@ main{
             top: 45%;
             right: 13%;
             font-size: 150%;
-            color: black;
+            color: white;
         }
         #plus{
             position: absolute;
             top: 38%;
             right: 17%;
             font-size: 300%;
-            color: black;
+            color: white;
         }
     }
 }
@@ -178,6 +180,7 @@ main{
                 span{
                     font-size: 100%;
                     color: grey;
+                    padding-top: 1%;
                 }
             }
             p{
@@ -238,11 +241,13 @@ main{
         }
         nav{
             float: left;
-            margin: 2% 0% 0% 0%;
+            margin: 0% 0% 0% 0%;
             border: none;
             width: 60%;
             padding: 0%;
             ul{
+                margin:0;
+                padding: 0;
                 li{
                     display: inline;
                     margin: 0% 1% 0% 0%;

@@ -7,6 +7,7 @@ session_start()
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../../order_food_online/style/main_footer.css">
     <title>dinning</title>
@@ -72,9 +73,33 @@ session_start()
             </div>
         </div>
                 <!-- hotel lists -->
+
+        <div class="container-fluid">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-1">
+                    
+                </div>
+                <div class="col-10">
+                    <div class="jumbotron jumbotron-fluid text-center">
+                        <div class="container">
+                            <h1 class="display-6 text-center">Currently dinning not available in your state</h1>
+                            <figure class="figure">
+                                <img src="../../image/index-octonaut-8ece2623b8966578e2414c89b7b7190cb56339d1f8b7d260adf62110ce9f39c4.svg" class="figure-img img-fluid rounded" alt="">
+                                <figcaption class="figure-caption text-xs-right"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    
+                </div>
+            </div>
+        </div>
         
-        <div id="hotel-list">
-            <?php for ($i=0; $i < 18; $i++) : ?>
+        <!-- <div id="hotel-list">
+            <?php for ($i=0; $i < 1; $i++) : ?>
                 <ul>
                     <li><img src="../../order_food_online/Image/a3323233b67cc56774dda311aa6903a31615696511.png.jpeg" width="22%"  alt="img"></li>
                     <li>Beer Adda</li>
@@ -83,12 +108,12 @@ session_start()
                     <li><a href="">Pub, Casual Dining - North Indian, Chinese, Pizza, Continental, Salad, Burger, Biryani, Beverages</a></li>
                 </ul>
             <?php endfor ?>
-        </div>
+        </div> -->
                 <!-- more collection -->
 
-        <div id="Collections">
+        <!-- <div id="Collections">
             <h2>More Collections</h2>
-            <?php for ($i=0; $i < 18; $i++) : ?>
+            <?php for ($i=0; $i < 1; $i++) : ?>
             <ul>
                 <li><img src="../../order_food_online/Image/aebeb88b78a4a83ea9e727f234899bed1602781186.png.jpeg" alt="img">
                     <ul>
@@ -98,7 +123,7 @@ session_start()
                 </li>
             </ul>
             <?php endfor ?>
-        </div>
+        </div> -->
         <div id="Explore">
             <h3>Explore other options for you here</h3>
             <h4>Popular cuisines near me</h4>

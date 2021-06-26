@@ -111,6 +111,8 @@
                     img{
                         width: 100%;
                         height: 160px;
+                        border: solid 1px grey;
+                        border-radius: .5em;
                     }
                     span{
                         color: $secondry-black-color;

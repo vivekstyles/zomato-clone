@@ -52,9 +52,15 @@ if (isset($_GET['select'])) {
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href=".?select=upload_blog&action=listed_Restaurant">
+                                    <span data-feather="shopping-cart"></span>
+                                    blog images
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href=".?select=upload_menu&action=listed_Restaurant">
                                     <span data-feather="shopping-cart"></span>
-                                    menu
+                                    Menu
                                 </a>
                             </li>
                 </nav> 
@@ -63,7 +69,7 @@ if (isset($_GET['select'])) {
         <?php if($select === 'foot_image'): ?>
                 <main class="col-lg-9 align-content-end px-lg-5">
                     <div class="jumbotron">
-                        <h1 class="display-3" id="hi"><?php echo $restaurant_name;?></h1>
+                        <h1 class="display-3 text-capitalize" id="hi"><?php echo $restaurant_name;?></h1>
                         <p class="lead">Insert image by category</p>
                         <hr class="my-2">
                     </div>
@@ -81,14 +87,30 @@ if (isset($_GET['select'])) {
                             <?php if ($error == ''):?>
                             <small id="fileHelpId" class="form-text text-muted">choose image from your device</small>
                             <?php else:?>
-                            <small id="fileHelpId" class="form-text text-muted"><?php echo $error;?></small>
+                            <!-- <small id="fileHelpId" class="form-text text-muted"><?php echo $error;?></small> -->
                             <?php endif; ?>
                         </div>
                         
                         <!-- enter food category -->
                         <div class="form-group col-lg-3">
                             <label for="">Category</label>
-                            <input type="text"class="form-control form-control-sm" name="category" id="category" aria-describedby="helpId" placeholder="">
+                            <input type="text"class="form-control form-control-sm h-50" style="width:200%;" name="category" id="category" aria-describedby="helpId" placeholder="">
+                            <span id="category_error">*</span>
+                        </div>
+                        <br>
+
+                        <!-- enter item name -->
+                        <div class="form-group col-lg-3">
+                            <label for="">Item</label>
+                            <input type="text"class="form-control form-control-sm h-50" style="width:200%;" name="item" id="item" aria-describedby="helpId" placeholder="">
+                            <span id="category_error">*</span>
+                        </div>
+                        <br>
+
+                        <!-- enter item name -->
+                        <div class="form-group col-lg-3">
+                            <label for="">About food</label>
+                            <input type="text"class="form-control form-control-sm" style="width:200%;" name="aboutfood" id="item" aria-describedby="helpId" placeholder="">
                             <span id="category_error">*</span>
                         </div>
                         <br>
@@ -103,7 +125,7 @@ if (isset($_GET['select'])) {
 
                         <!-- select veg type -->
                         <div class="form-group col-lg-3">
-                            <label for="">veg or non-veg</label>
+                            <label for="">Veg or non-veg</label>
                             <select class="form-control form-control-sm" name="veg_type" id="">
                                 <option>veg</option>
                                 <option>non-veg</option>
@@ -113,14 +135,24 @@ if (isset($_GET['select'])) {
                         <!-- submit button -->
                         <button type="submit" class="btn col-3 btn-danger mb-4 mt-5" id="submitID">Submit</button>
                     </form>
+                    <?php if (isset($_GET['error1'])) :?>
+                    <?php if ($_GET['error1'] == 'true'):?>
+                    <div class="alert alert-success" role="alert">
+                        <strong>New item uploaded!</strong> <a href="#" class="alert-link"></a>
+                    </div>
+                    <?php endif?>
+                    <?php endif?>
+
                     <!-- form ends -->
 
             </div>
             </main>
         <?php elseif ($select === 'hotel_picture'):?>
             <?php include '../view/hotel_banner_images.php'; ?>  
+        <?php elseif ($select === 'upload_blog'):?>
+            <?php include '../view/hotel_blog_images.php'; ?>  
         <?php elseif ($select === 'upload_menu'):?>
-            <?php include '../view/hotel_menu_images.php'; ?>  
+            <?php include '../view/hotel_menu.php'; ?>  
         <?php endif?>
         </div>
     </div>

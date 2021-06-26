@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once '../../order_food_online/model/order_food_online_class.php';
 
 if (isset($_POST['action'])) {
     # code...

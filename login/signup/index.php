@@ -1,6 +1,5 @@
 <?php
 require '../model/user_sign_db.php';
-
 session_start();
 
 if (isset($_POST['action'])) {
@@ -62,6 +61,7 @@ if (isset($_GET['app_root'])) {
     $res = get_login_info($Email, $password);
     $_SESSION['user_name'] = get_user_name($Email, $password);
     $_SESSION['user_id'] = get_userId_name($Email, $password);
+    $_SESSION['email_id'] = User_class::get_email($Email,$password);
     $user_name = $_SESSION['user_name'];
     if ($res) {
 

@@ -1,28 +1,23 @@
 <section id="section-2">
             <nav>
                 <ul>
-                    <li><a href="">Overview</a></li>
-                    <li><a href="">Order Online</a></li>
-                    <li><a href="">Reviews</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Photos</a></li>
+                    <li>Overview</li>
+                    <li>Order Online</li>
+                    <li>Reviews</li>
+                    <li>Menu</li>
+                    <li>Photos</li>
                 </ul>
             </nav>
-            <aside>
+            <aside id="aside">
                 <ul>
                     <li>Recommended (35)</li>
-                    <li>Leon Burgers (12)</li>
-                    <li>Burger Combos (6)</li>
-                    <li>Leon Pastas (4)</li>
-                    <li>London Doners (10)</li>
-                    <li>London Doners (10)</li>
-                    <li>London Doners (10)</li>
-                    <li>London Doners (10)</li>
-                    <li>London Doners (10)</li>
-                    <li>London Doners (10)</li>
+                    <?php foreach($category as $item):?>
+                    <li><a href=""><?php echo $item['category'].' '.'('.$item['total'].')';?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </aside>
-            <main>
+            
+            <main id="online" class="show">
                 <h1>Order Online</h1>
                 <div id="search-bar">
                     <form action="">
@@ -54,41 +49,31 @@
                     <input type="checkbox" name="" id=""><span> veg only</span><br>
                 </form>
                 <h1 id="recommend-heading">Recommended</h1>
-                <?php for ($i=0; $i < 3; $i++) :?>
-                <div class="food-list">
-                    <img src="../../image/image/0AE6E63E-E446-41B9-82AC-9CD66DB27AFB_4_5005_c.jpeg" alt="">
-                    <ul>
-                        <li><h3>Peri-Peri Chicken Burger</h3></li>
-                        <li><p>₹180</p></li>
-                        <li><p id="p-dis">4/6 Members :-4/6 Nos Mayo Burger+2/3 Nos Chicken Popcorn+4/6 Portions French Fries+1.25 liter ... <span>read more</span></p></li>
-                    </ul>
-                    <form action="">
-                        <input type="submit" value="add +">
-                    </form>
-                </div>
 
-                <div class="food-list">
-                    <img src="../../image/image/B0982CE8-2E0D-4922-B0A6-91D70BEBC812_4_5005_c.jpeg" alt="">
+                <!-- php foreach starts here -->
+                <?php foreach ($allFoods as $values):?>
+                <div class="food-list" id="foods">
+                <?php echo '<img width="350" height="250" src="data:image/jpeg;base64,'.base64_encode($values['img']).'">';?>
+
                     <ul>
-                        <li><h3>Peri-Peri Chicken Burger</h3></li>
-                        <li><p>₹180</p></li>
-                        <li><p id="p-dis">4/6 Members :-4/6 Nos Mayo Burger+2/3 Nos Chicken Popcorn+4/6 Portions French Fries+1.25 liter ... <span>read more</span></p></li>
+                        <li><h3 class=" text-capitalize"><?php echo $values['item']; ?></h3></li>
+                        <li><p class=" fs-6">₹<span class=" fs-6"><?php echo floatval(round($values['price'],2));?></span></p></li>
+                        <li><p class=" d-none"><span><?php echo $values['imageID'];?></span></p></li>
+                        <li><p id="p-dis"><?php echo substr($values['aboutfoot'],0,100);?><span> read more</span></p></li>
                     </ul>
-                    <form action="">
-                        <input type="submit" value="add +">
-                    </form>
+                    
+                        <!-- here in this session is used for display ordered food details  -->
+                        <?php 
+                        $_SESSION['orders'] = array();
+                        $_SESSION['orders'] = Online_order_class::get_food_details_by_foodId($values['imageID']);
+                        $lisItems = $_SESSION['orders'];
+                        ?>
+
+                        <input type="hidden" name="orderid" value="<?php foreach ($lisItems as $value) {echo $value['item'];
+                    }?>" id="image_id">
+                        <input type="submit" name="add" value="add +" id="submit">
                 </div>
-                <div class="food-list">
-                    <img src="../../image/image/C85E96B7-2A3C-4CC0-A9AA-A6774ED7EC3B_4_5005_c.jpeg" alt="">
-                    <ul>
-                        <li><h3>Peri-Peri Chicken Burger</h3></li>
-                        <li><p>₹180</p></li>
-                        <li><p id="p-dis">4/6 Members :-4/6 Nos Mayo Burger+2/3 Nos Chicken Popcorn+4/6 Portions French Fries+1.25 liter ... <span>read more</span></p></li>
-                    </ul>
-                    <form action="">
-                        <input type="submit" value="add +">
-                    </form>
-                </div>
-                <?php endfor; ?>
+                <?php endforeach; ?>
             </main>
+            <?php include '../view/menu_main.php' ?>
         </section>

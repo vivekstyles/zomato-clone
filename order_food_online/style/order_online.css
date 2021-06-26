@@ -87,24 +87,27 @@ header h1 a{
 
 #online_order ul{
     margin: 0% 0% 0% 11%;
+    margin-bottom: 0%;
 }
 #online_order ul li{
     display: inline-block;
     list-style: none;
     padding: 1%;
+    margin-bottom: 0%;
+    padding-bottom: 1%;
+    border-bottom: 3px solid white;
 }
 
-#online_order ul li img{
-    width: 50px;
-    height: 50px;
-    border-radius: 5em;
-    object-fit:cover;
+#online_order ul li:hover{
+    border-bottom: 3px solid rgba(235	98	115	);
 }
-
+#online_order ul li:hover > a{
+    color:rgba(235	98	115	);
+}
 main{
     clear: both;
-    border-top: 1px solid rgb(232	232	232	);
-    margin: 1% 0% 0% 0%;
+    border-top: 2px solid rgb(232	232	232	);
+    margin: 2px 0% 0% 0%;
 }
 
 main section ul{

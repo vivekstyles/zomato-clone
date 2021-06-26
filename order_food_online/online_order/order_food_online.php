@@ -18,7 +18,7 @@
         <a href=".?action=signup" id="signup">Signup</a>
     <?php else : ?>
         <img src="../../order_food_online/Image/wine_2x.png.jpeg" alt="user logo" style="position: absolute;top:2%;height:2.5em;border-radius:5em;margin-left:80%;margin-top:0em;">
-        <a href="#" id="username" style="position: absolute;top:2.5%;margin-left:83.5%;margin-top:0em;color:black;font-size:150%;font-weight:400;"><?php echo $_SESSION['user_name'] ?></a>
+        <a href="#" id="username" style="position: absolute;top:2.5%;margin-left:83.5%;margin-top:0em;color:black;font-size:150%;font-weight:400;text-transform: capitalize;"><?php echo $_SESSION['user_name'] ?></a>
     <?php endif; ?>
     <form name="" action="">
         <input type="text" name="link" id="location" placeholder="chennai" list="links">
@@ -38,9 +38,9 @@
     </div>
     <div id="online_order">
         <ul>
-            <li><a href=""><img src="../Image/c0bb85d3a6347b2ec070a8db694588261616149578.png" alt=""> Delivery</a></li>
-            <li><a href="../../dinning/dinning_online/index.php?action=go_out"><img src="../Image/c0bb85d3a6347b2ec070a8db694588261616149578.png" alt="">Dining Out</a></li>
-            <li><a href=""><img src="../Image/c0bb85d3a6347b2ec070a8db694588261616149578.png" alt="">Nightlife</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="../../dinning/dinning_online/index.php?action=go_out">Dining Out</a></li>
+            <li><a href="">Nightlife</a></li>
         </ul>
     </div>
     </header>
@@ -74,7 +74,7 @@
                     <li>
                         <ul>
                             <li><a href="../../order/add_orders/index.php?action=ViewHotel&hotel_primary_key=<?php echo $value['mobileNo']?>"><?php echo '<img width="350" height="250" src="data:image/jpeg;base64,'.base64_encode($value['image']).'">';?></a></li>
-                            <li><p id="hotel-name"><?php echo $value['Restaurant']; ?></p></li>
+                            <li><p id="hotel-name" class=" text-capitalize"><?php echo $value['Restaurant']; ?></p></li>
                             <li id="rating-li"><?php foreach(range(1,5) as $v):?> <img src="../../order_food_online/Image/pngfind.com-red-star-png-454438.png" alt="" id="rating"><?php endforeach?> 4.2</li>
                             <li id="item"><?php echo $value['about_hotel'].' ';?></li>
                             <li><span class="span-li"><?php echo '$'.$value['per_person']?></span> per person • 34 min</li>

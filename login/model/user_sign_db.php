@@ -1,6 +1,24 @@
 <?php
 include '../../model/database.php';
 
+class User_class{
+    static protected $email;
+
+    static public function get_email($Email,$password){
+        global $db;
+        
+        $password = sha1($Email.$password);
+        $query = "select * from user where password = '$password' and Email = '$Email';";
+        $r = $db->query($query);
+        $row = $r->fetch();
+        if (isset($row['Email'])){
+            self::$email = $row['Email'];
+            return self::$email;
+        }else{
+            return false;
+        }
+    }
+}
 
 function insert_user_info($fullName,$Email,$password){
     global $db;

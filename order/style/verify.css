@@ -36,24 +36,67 @@ header img {
 }
 
 header ul {
+  position: relative;
   float: left;
-  width: 30%;
-  margin: 2% 10% 0% 0%;
+  width: 20%;
+  margin: .5% 0% 0% 0%;
+}
+
+header ul #user-name {
+  margin: 5% 0% 0% 0%;
+  font-size: 120%;
+  padding: 0;
+  color: #ea5a6b;
+  text-transform: capitalize;
 }
 
 header ul li {
-  float: left;
-  padding-left: 20em;
-  padding-top: .5%;
+  font-size: 100%;
 }
 
 header ul li img {
-  position: absolute;
-  width: 3%;
-  height: 5.2%;
-  top: 1%;
-  right: 16.5%;
+  width: 15%;
+  height: 15%;
+  margin: 2% 2% 0% 25%;
   border-radius: 5em;
+  padding: 0;
+  position: unset;
+}
+
+header ul li:hover > ul {
+  top: 80%;
+  position: absolute;
+  z-index: 10;
+  content: " ";
+  display: block;
+  height: auto;
+}
+
+header ul ul {
+  padding: 4% 2%;
+  display: none;
+  width: 100%;
+  height: 150px;
+  font-size: 90%;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 1em;
+}
+
+header ul ul li {
+  margin: .5em .5em .5em 0em;
+  width: inherit;
+}
+
+header ul ul li a {
+  text-align: center;
+  width: inherit;
+  color: #363636;
+  padding: .2em 0em;
+}
+
+header ul ul li a:hover {
+  color: #ea5a6b;
 }
 
 main {
@@ -150,6 +193,7 @@ section #third-container p {
 aside {
   float: left;
   width: 30%;
+  height: 1000px;
   position: relative;
   margin: 2% 0% 0% 2%;
   padding: 0%;
@@ -410,9 +454,9 @@ aside #non-refund p {
 }
 
 aside #button {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 62%;
+  top: 100%;
 }
 
 aside #button button {
@@ -430,5 +474,10 @@ aside #button button {
 
 aside #button button:hover {
   cursor: pointer;
+}
+
+.none {
+  display: none;
+  color: blue;
 }
 /*# sourceMappingURL=verify.css.map */

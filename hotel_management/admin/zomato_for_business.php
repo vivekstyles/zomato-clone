@@ -24,7 +24,7 @@
 				<li><a href="">Contact us</a></li>
 				<?php if (!empty($_SESSION['user_name'])) : ?>
 					<li><a href=""><img src="../../order_food_online/Image/wine_2x.png.jpeg" alt="">
-							<p><?php echo $_SESSION['user_name']; ?></p>
+							<p style="text-transform:capitalize;"><?php echo $_SESSION['user_name']; ?></p>
 						</a></li>
 				<?php endif; ?>
 			</ul>
